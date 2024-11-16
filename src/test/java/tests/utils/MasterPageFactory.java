@@ -25,5 +25,9 @@ public class MasterPageFactory {
 			throw new PageException("Error in page mobile", e);
 		}
 	}
+
+	public static org.slf4j.Logger getLog() {
+		return log;
+	}
 }
 

@@ -8,7 +8,7 @@ public class HomeSteps {
     private ProfileLogic profileLogic;
 
     public HomeSteps() {
-        HomeLogic homeLogic = new HomeLogic ();
+        HomeLogic HomeLogic = new HomeLogic ();
     }
 
     @Given("que estou na tela inicial do app {string}")

@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5355afda-b732-46b6-97d6-e4c1a093ab08" name="Changes" comment="novo projeto">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/MasterPageFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/PageException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/gerador/Convenio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/gerador/FakerJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/gerador/RandomGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomeLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomeLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/profile/ProfileLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/profile/ProfileLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/profile/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/profile/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/PageMaker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/MasterPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/MasterPageFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -57,7 +59,8 @@
     "onboarding.tips.debug.path": "C:/CURSO_MOBILE/MobileAppiumTests/src/main/java/org/mobile/appiumtests/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -125,7 +128,7 @@
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="21 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH" value="18 (2)" />
       <option name="PACKAGE_NAME" value="execution" />
       <option name="MAIN_CLASS_NAME" value="execution.CucumberTest" />
       <option name="METHOD_NAME" value="" />
@@ -190,6 +193,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/mobile/appiumtests/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/pages/home/HomeSteps.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

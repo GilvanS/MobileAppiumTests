@@ -11,4 +11,7 @@ public class ProfilePage extends MasterPageFactory {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text= 'Sign up']")
     private WebElement clicarBtnSignUp;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text= 'Sign in']")
+    private WebElement campoFirstName;
+
 }

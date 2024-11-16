@@ -9,11 +9,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import java.time.Duration;
 
 public class Actions {
 
-    public void sendKeys(WebElement element, String value){
+    private Actions element;
+
+    public void sendKeys(String value){
         element.sendKeys(value);
         delay(Constants.SEND_KEYS_DELAY_IN_MILLISECONDS);
     }
@@ -22,6 +25,20 @@ public class Actions {
         delay(Constants.DEFAULT_DELAY_IN_MILLISECONDS);
     }
 
+    /**lic void delay(int seconds, int milliseconds){
+        delay(seconds * 1000 + milliseconds);
+    }
+     * Sleep for current thread
+     *
+     * @param seconds
+     */
+    public void sleep(int seconds) {
+        try {
+            Thread.sleep(1_000 * seconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void hideKeyboard(){
         Hooks.getDriver().hideKeyboard();
