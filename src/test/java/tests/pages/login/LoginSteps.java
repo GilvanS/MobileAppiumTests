@@ -1,5 +1,6 @@
 package tests.pages.login;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import lombok.extern.slf4j.Slf4j;
@@ -9,26 +10,18 @@ public class LoginSteps {
 
     LoginLogic loginLogic = new LoginLogic();
 
-
-    @Given("preencho o campo {string} na tela login")
-    public void preenchoOCampo(String campo) throws Exception {
-        switch (campo.toLowerCase()) {
-            case "username":
-                LoginLogic.clickBtnUsername();
-                break;
-            case "password":
-                LoginLogic.clickBtnPassword();
-                break;
-            default:
-                throw new Exception("Campo não reconhecido: " + campo);
-        }
+    @Given ("que estou na tela inicial do app {string}")
+    public void queEstouNaTelaInicialDoApp(String app) {
+        LoginLogic.validatePage();
     }
-//    @When("preencho o campo {string}")
-//    public void preenchoOCampoUsername(String opcao) throws Exception {
-//        LoginLogic.clickBtncampo(opcao);
-//    }
-    @When("clico no botao {string} na tela login")
-    public void clicoNoBotaoLogIn(String arg) throws Exception {
+
+    @And("preencho o campo {string} na tela {string}")
+    public void preenchoOCampo(String campo, String tela) throws Exception {
+//        LoginLogic.clickBtncampo(campo, tela);
+    }
+
+    @And("clico no botao {string} na tela {string}")
+    public void clicoNoBotaoLogIn(String arg, String tela) throws Exception {
         LoginLogic.clickBtnLogin();
     }
 

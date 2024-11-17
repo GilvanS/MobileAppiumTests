@@ -1,34 +1,30 @@
 package tests.pages.login;
 
-import io.appium.java_client.AppiumDriver;
 import lombok.extern.slf4j.Slf4j;
-
-
+import tests.utils.MasterPageFactory;
 
 @Slf4j
 public class LoginLogic {
 
-
-
-    public static void validarTxtAppLogoAndName() throws Exception {
-
-    }
-    public static void clickBtnHamburger() throws Exception {
-
+    static LoginPage loginPage = new LoginPage();
+    public static LoginPage loginPage() {
+        return MasterPageFactory.getPage(LoginPage.class);
     }
 
-    public static void clickBtncampo(String opcao) throws Exception {
+    public static void validatePage(){
+        loginPage().validatePage();
+    }
 
+    public static void clickBtncampo(String opcao, String tela) throws Exception {
         // Normaliza a string de entrada para maiúsculas e remove espaços para comparação
         String opcaoNormalizada = opcao.toUpperCase().replace(" ", "_");
-
         // Determina a ação com base na opção
         switch(opcaoNormalizada) {
-            case "Username":
-
+            case "USERNAME":
+                loginPage().getTxtUsername().sendKeys("standrd_user");
                 break;
-            case "Password":
-
+            case "PASSWORD":
+                loginPage().getTxtPassword().sendKeys("secret_sauce");
                 break;
             default:
                 System.out.println("Opção inválida: " + opcao);
@@ -37,30 +33,8 @@ public class LoginLogic {
 
     }
 
-    public static void clickBtnUsername() throws Exception {
-
-    }
-
-    public static void clickBtnPassword() throws Exception {
-
-    }
-
     public static void clickBtnLogin() throws Exception {
-
-        log.info ("clickBtnLogin");
-
-    }
-    public static void clickBtnStandardUser() throws Exception {
-
-        log.info ("clickBtnStandardUser");
-    }
-    public static void clickBtnSecretsauce() throws Exception {
-
-        log.info ("clickBtnSecretsauce");
-
+        loginPage ().getBtnLogin().click();
     }
 
-    public static void clicarBtnProducts() throws Exception {
-
-    }
 }

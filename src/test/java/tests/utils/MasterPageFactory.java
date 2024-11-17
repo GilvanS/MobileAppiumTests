@@ -3,31 +3,22 @@ package tests.utils;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.support.PageFactory;
+import tests.pages.login.LoginPage;
 
 
 @Slf4j
 public class MasterPageFactory {
-
-	/**
-	 * Return the instance of mobile factory page objects
-	 *
-	 * @param <T>
-	 * @param pageClass
-	 * @return instance of page objects
-	 */
-	public static <T extends MasterPageFactory> T getInstance(Class<T> pageClass) {
+	public static <T> T getPage(Class<T> cls) {
+		T page;
 		try {
-			T pageObject = pageClass.getDeclaredConstructor().newInstance();
-			PageFactory.initElements(new AppiumFieldDecorator(Hooks.getDriver()), pageObject);
-
-			return pageObject;
+			page = cls.getDeclaredConstructor().newInstance();
+			PageFactory.initElements(new AppiumFieldDecorator(Hooks.getDriver()), page);
 		} catch (Exception e) {
-			throw new PageException("Error in page mobile", e);
+			log.error("Error on page instantiation", e);
+			throw new RuntimeException(e);
 		}
+		return page;
 	}
 
-	public static org.slf4j.Logger getLog() {
-		return log;
-	}
 }
 

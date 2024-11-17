@@ -15,11 +15,11 @@ public class AppiumDriverHelper {
         log.info("iniciando servidor http://127.0.0.1:" + PORTA);
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("appium:appPackage", "com.saucelabs.mydemoapp.android");
-        capabilities.setCapability("appium:appActivity", ".view.activities.SplashActivity");
+        capabilities.setCapability("appium:appPackage", "com.swaglabsmobileapp");
+        capabilities.setCapability("appium:appActivity", "com.swaglabsmobileapp.SplashActivity");
         capabilities.setCapability("platformName", "android");
         capabilities.setCapability("automationName", "uiautomator2");
-        capabilities.setCapability("deviceName", "emulator-5554");
+        capabilities.setCapability("deviceName", "0078720227");
         capabilities.setCapability("appium:ignoreHiddenApiPolicyError", true);
         capabilities.setCapability("ensureWebviewsHavePages", true);
         capabilities.setCapability("newCommandTimeout", 3600);
