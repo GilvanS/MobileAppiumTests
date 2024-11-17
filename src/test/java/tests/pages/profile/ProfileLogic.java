@@ -12,30 +12,24 @@ import static tests.utils.gerador.FakerJava.*;
 @Slf4j
 public class ProfileLogic {
 
-    private static ProfilePage profilePage;
-    private static tests.utils.Actions Actions;
-
-    public static HomePage homePage() {
-        profilePage = MasterPageFactory.getInstance(ProfilePage.class);
-        return null;
+    public static ProfilePage profilePage() {
+        return MasterPageFactory.getInstance(ProfilePage.class);
     }
 
     public static void clicarBtnSignUp() throws Exception {
         log.info ("Clico no botão 'Sign Up'");
-        Actions.click(profilePage.getClicarBtnSignUp());
-        Actions.sleep(2000);
+        profilePage().getClicarBtnSignUp().click();
     }
+
 
     public static void btnFirstName() throws Exception {
         log.info("Primeiro Nome: {}", primeiroNome);
-        Actions.sendKeys(primeiroNome);
-        Actions.sleep(2000);
+        profilePage().getCampoFirstName ().sendKeys(primeiroNome);
 
     }
     public static void btnLastName() throws Exception {
         log.info("Segundo Nome: {}", sobreNome);
-        Actions.sendKeys(sobreNome);
-        Actions.sleep(2000);
+        profilePage().getCampoLastName ().sendKeys(sobreNome);
 
     }
     public static void btnPhone() throws Exception {
@@ -45,8 +39,7 @@ public class ProfileLogic {
     }
     public static void btnEmail() throws Exception {
         log.info("Email: {}", email);
-        Actions.sendKeys(email);
-        Actions.sleep(2000);
+        profilePage()
 
     }
     public static void btnPassword() throws Exception {

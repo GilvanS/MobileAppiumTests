@@ -16,6 +16,9 @@ public class Actions {
 
     private Actions element;
 
+    public static void click(WebElement element) {
+        waitElement(element).click();
+    }
     public void sendKeys(String value){
         element.sendKeys(value);
         delay(Constants.SEND_KEYS_DELAY_IN_MILLISECONDS);
@@ -32,7 +35,7 @@ public class Actions {
      *
      * @param seconds
      */
-    public void sleep(int seconds) {
+    public static void sleep(int seconds) {
         try {
             Thread.sleep(1_000 * seconds);
         } catch (InterruptedException e) {
@@ -96,9 +99,6 @@ public class Actions {
         WebDriverWait wait = new WebDriverWait(Hooks.getDriver(), Constants.TIMEOUT_PRESENCE_OF_ELEMENT_LOCATED_SECONDS);
         WebElement elemento = wait.until(ExpectedConditions.visibilityOf(element));
         return elemento;
-    }
-    public void click(WebElement element) {
-        waitElement(element).click();
     }
 
 

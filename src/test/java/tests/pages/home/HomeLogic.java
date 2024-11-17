@@ -8,11 +8,9 @@ import tests.utils.MasterPageFactory;
 public class HomeLogic {
 
     private static HomePage homePage;
-    private static tests.utils.Actions Actions;
 
     public static HomePage homePage() {
-        homePage = MasterPageFactory.getInstance(HomePage.class);
-        return null;
+        return homePage = MasterPageFactory.getInstance(HomePage.class);
     }
 
     public static void clicarBtnProfile() throws Exception {
