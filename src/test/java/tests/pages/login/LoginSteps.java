@@ -1,8 +1,10 @@
 package tests.pages.login;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import lombok.extern.slf4j.Slf4j;
+import tests.pages.profile.ProfileLogic;
 
 @Slf4j
 public class LoginSteps {
@@ -14,22 +16,23 @@ public class LoginSteps {
     public void preenchoOCampo(String campo) throws Exception {
         switch (campo.toLowerCase()) {
             case "username":
-                LoginLogic.clickBtnUsername();
+                LoginLogic.preencherCampoUsername();
                 break;
             case "password":
-                LoginLogic.clickBtnPassword();
+                LoginLogic.preencherCampoPassword();
                 break;
             default:
-                throw new Exception("Campo não reconhecido: " + campo);
+                throw new Exception ("Campo não reconhecido: " + campo);
         }
     }
-//    @When("preencho o campo {string}")
-//    public void preenchoOCampoUsername(String opcao) throws Exception {
-//        LoginLogic.clickBtncampo(opcao);
-//    }
+
     @When("clico no botao {string} na tela login")
     public void clicoNoBotaoLogIn(String arg) throws Exception {
         LoginLogic.clickBtnLogin();
+    }
+    @Then("valido a exibicao dos produtos na tela {string}")
+    public void validoAExibicaoDosProdutosNaTela(String string) {
+
     }
 
 

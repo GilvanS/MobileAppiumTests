@@ -15,15 +15,20 @@ public class AppiumDriverHelper {
         log.info("iniciando servidor http://127.0.0.1:" + PORTA);
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("appium:appPackage", "br.com.lojaebac");
-        capabilities.setCapability("appium:appActivity", "br.com.lojaebac.MainActivity");
-        capabilities.setCapability("platformName", "android");
+        capabilities.setCapability("appium:appPackage", "com.swaglabsmobileapp");
+        capabilities.setCapability("appium:appActivity", "com.swaglabsmobileapp.SplashActivity");
+        capabilities.setCapability("deviceName", "emulator-5554");
         capabilities.setCapability("automationName", "uiautomator2");
-        capabilities.setCapability("deviceName", "0078720227");
+        capabilities.setCapability("appium:noReset", false);
+        capabilities.setCapability("appium:autoGrantPermissions", true);
+//        cap.setCapability("appium:unicodeKeyboard", true);
+//        cap.setCapability("appium:resetKeyboard", true);
+        capabilities.setCapability("appium:ensureWebviewsHavePages", true);
+        capabilities.setCapability("appium:newCommandTimeout", 60);
+        capabilities.setCapability("appium:connectHardwareKeyboard", true);
+        capabilities.setCapability("appium:eventTimings", true);
         capabilities.setCapability("appium:ignoreHiddenApiPolicyError", true);
-        capabilities.setCapability("ensureWebviewsHavePages", true);
-        capabilities.setCapability("newCommandTimeout", 3600);
-        capabilities.setCapability("connectHardwareKeyboard", true);
+        capabilities.setCapability("appium:ensureWebviewsHavePages", true);
 
         return capabilities;
     }

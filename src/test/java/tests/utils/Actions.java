@@ -1,5 +1,6 @@
 package tests.utils;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -14,17 +15,21 @@ import java.time.Duration;
 
 public class Actions {
 
-    private Actions element;
+    private AppiumDriver driver;
 
-    public void sendKeys(String value){
-        element.sendKeys(value);
+    public Actions(AppiumDriver driver) {
+        this.driver = driver;
+    }
+
+    public void sendKeys(String text) {
+        sendKeys(text);
         delay(Constants.SEND_KEYS_DELAY_IN_MILLISECONDS);
     }
 
-    public void delay(){
-        delay(Constants.DEFAULT_DELAY_IN_MILLISECONDS);
-    }
 
+    private AppiumDriver getDriver() {
+        return driver;
+    }
     /**lic void delay(int seconds, int milliseconds){
         delay(seconds * 1000 + milliseconds);
     }
@@ -100,6 +105,5 @@ public class Actions {
     public void click(WebElement element) {
         waitElement(element).click();
     }
-
 
 }
