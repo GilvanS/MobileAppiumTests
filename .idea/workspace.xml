@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5355afda-b732-46b6-97d6-e4c1a093ab08" name="Changes" comment="novo projeto">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/DurationConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/MobileActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/utils/SecondsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/home/HomeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/AppiumDriverHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/AppiumDriverHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Home.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Home.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

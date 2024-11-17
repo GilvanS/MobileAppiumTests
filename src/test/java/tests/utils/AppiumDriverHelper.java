@@ -17,7 +17,7 @@ public class AppiumDriverHelper {
 
         capabilities.setCapability("appium:appPackage", "com.swaglabsmobileapp");
         capabilities.setCapability("appium:appActivity", "com.swaglabsmobileapp.SplashActivity");
-        capabilities.setCapability("deviceName", "emulator-5554");
+        capabilities.setCapability("deviceName", "0078720227");
         capabilities.setCapability("automationName", "uiautomator2");
         capabilities.setCapability("appium:noReset", false);
         capabilities.setCapability("appium:autoGrantPermissions", true);
