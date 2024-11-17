@@ -10,21 +10,39 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+/**
+ * Classe utilitária para manuseio de ações comuns em testes móveis usando Appium.
+ */
 public class Actions {
 
+    /**
+     * Clica no elemento fornecido após esperar pela sua visibilidade.
+     * @param element o WebElement a ser clicado
+     */
     public static void click(WebElement element) {
         waitElement(element).click();
     }
 
+    /**
+     * Envia uma string de entrada para o elemento fornecido com um delay configurado.
+     * @param element o WebElement que receberá a string
+     * @param value a string a ser enviada
+     */
     public static void sendKeys(WebElement element, String value) {
         element.sendKeys(value);
         delay(Constants.SEND_KEYS_DELAY_IN_MILLISECONDS);
     }
 
+    /**
+     * Esconde o teclado se estiver visível.
+     */
     public static void hideKeyboard() {
         Hooks.getDriver().hideKeyboard();
     }
 
+    /**
+     * Realiza um swipe vertical da metade para o topo da tela.
+     */
     public static void swipeVertical() {
         Dimension size = Hooks.getDriver().manage().window().getSize();
         int starty = (int) (size.height * 0.5);
@@ -38,6 +56,9 @@ public class Actions {
                 .release().perform();
     }
 
+    /**
+     * Realiza um swipe horizontal do centro para a esquerda da tela.
+     */
     public static void swipeHorizontal() {
         Dimension size = Hooks.getDriver().manage().window().getSize();
         int starty = (int) (size.height / 2);
@@ -51,6 +72,10 @@ public class Actions {
                 .release().perform();
     }
 
+    /**
+     * Introduz um delay pelo número de milissegundos especificado.
+     * @param milliseconds o tempo de delay em milissegundos
+     */
     public static void delay(int milliseconds) {
         try {
             Thread.sleep(milliseconds);
@@ -60,11 +85,21 @@ public class Actions {
         }
     }
 
+    /**
+     * Espera pela visibilidade de um elemento e o retorna.
+     * @param element o WebElement a ser aguardado
+     * @return o WebElement visível
+     */
     public static WebElement waitElement(WebElement element) {
         WebDriverWait wait = new WebDriverWait(Hooks.getDriver(), Constants.TIMEOUT_PRESENCE_OF_ELEMENT_LOCATED_SECONDS);
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static void waitElementPresence(String s) {
+    /**
+     * Método placeholder para esperar pela presença de um elemento usando um localizador.
+     * @param locator o localizador do elemento
+     */
+    public static void waitElementPresence(String locator) {
+        // Implementar lógica para esperar pela presença de um elemento com base no localizador
     }
 }

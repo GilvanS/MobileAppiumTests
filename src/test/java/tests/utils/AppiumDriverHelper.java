@@ -6,13 +6,21 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * Classe utilitária para configurar e instanciar o AppiumDriver.
+ */
 @Slf4j
 public class AppiumDriverHelper {
 
-    public static final int PORTA = Hooks.gerarPortaAleatoria(); // Gera uma única vez
+    // Geração de porta aleatória
+    public static final int PORTA = Hooks.gerarPortaAleatoria();
 
+    /**
+     * Configura as DesiredCapabilities para o AppiumDriver.
+     * @return DesiredCapabilities configuradas
+     */
     public static DesiredCapabilities getCapabilities(){
-        log.info("iniciando servidor http://127.0.0.1:" + PORTA);
+        log.info("Iniciando servidor em http://127.0.0.1:" + PORTA);
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("appium:appPackage", "com.swaglabsmobileapp");
@@ -28,17 +36,26 @@ public class AppiumDriverHelper {
         return capabilities;
     }
 
+    /**
+     * Cria e retorna a URL do servidor Appium.
+     * @return URL do servidor Appium
+     * @throws MalformedURLException se a URL estiver malformada
+     */
     public static URL getURL() throws MalformedURLException {
         return new URL("http://127.0.0.1:" + PORTA + "/wd/hub");
     }
 
+    /**
+     * Instancia e retorna o AppiumDriver configurado.
+     * @return AppiumDriver instanciado
+     */
     public static AppiumDriver getDriver() {
         AppiumDriver driver = null;
 
         try {
             driver = new AppiumDriver(getURL(), getCapabilities());
         } catch (Exception e) {
-            log.error("Error on driver instantiation", e);
+            log.error("Erro na instância do driver", e);
             throw new RuntimeException(e);
         }
 

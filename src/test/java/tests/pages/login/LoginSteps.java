@@ -5,25 +5,26 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Define os passos de teste para o Cucumber no contexto de login.
+ */
 @Slf4j
 public class LoginSteps {
 
-    LoginLogic loginLogic = new LoginLogic();
+    private final LoginLogic loginLogic = new LoginLogic();
 
-    @Given ("que estou na tela inicial do app {string}")
+    @Given("que estou na tela inicial do app {string}")
     public void queEstouNaTelaInicialDoApp(String app) {
-        LoginLogic.validatePage();
+        loginLogic.validatePage();
     }
 
     @And("preencho o campo {string} na tela {string}")
-    public void preenchoOCampo(String campo, String tela) throws Exception {
-//        LoginLogic.clickBtncampo(campo, tela);
+    public void preenchoOCampo(String campo, String tela) {
+        loginLogic.preencherCampo(campo);
     }
 
     @And("clico no botao {string} na tela {string}")
-    public void clicoNoBotaoLogIn(String arg, String tela) throws Exception {
-        LoginLogic.clickBtnLogin();
+    public void clicoNoBotao(String arg, String tela) {
+        loginLogic.clicarBotaoLogin();
     }
-
-
 }

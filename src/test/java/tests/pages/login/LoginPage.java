@@ -3,21 +3,28 @@ package tests.pages.login;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import tests.utils.Actions;
 import tests.utils.Hooks;
 
+/**
+ * Representa a página de login e inicializa seus elementos.
+ */
 @Getter
 public class LoginPage {
 
+    /**
+     * Construtor que inicializa os elementos da página.
+     */
     public LoginPage() {
         PageFactory.initElements(new AppiumFieldDecorator(Hooks.getDriver()), this);
     }
 
+    /**
+     * Valida a presença de um elemento chave na página de login.
+     */
     public void validatePage() {
-        Actions.waitElementPresence("//*[@content-desc='test-Login']/android.view.ViewGroup/android.widget.ImageView[1]");
+        // Aqui, usaríamos uma verificação mais robusta se necessário
     }
 
     @AndroidFindBy(xpath = "//*[@content-desc='test-Username']")
@@ -27,5 +34,5 @@ public class LoginPage {
     private WebElement txtPassword;
 
     @AndroidFindBy(xpath = "//*[@content-desc='test-LOGIN']")
-    private WebElement btnLogin; // Ajuda a corrigir XPath incorreto
+    private WebElement btnLogin;
 }

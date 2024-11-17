@@ -4,12 +4,18 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import tests.pages.login.LoginPage;
 
+/**
+ * Classe utilitária para inicialização de páginas usando o padrão Page Factory.
+ */
 @Slf4j
 public class MasterPageFactory {
 
-	// Método genérico para obter página
+	/**
+	 * Método genérico para obter uma instância da página especificada.
+	 * @param cls Classe da página a ser instanciada
+	 * @return Instância da página inicializada
+	 */
 	public static <T> T getPage(Class<T> cls) {
 		T pageInstance;
 		try {
