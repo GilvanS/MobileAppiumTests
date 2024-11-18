@@ -35,4 +35,9 @@ public class LoginPage {
 
     @AndroidFindBy(xpath = "//*[@content-desc='test-LOGIN']")
     private WebElement btnLogin;
+
+	public WebElement getTxtUsername() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

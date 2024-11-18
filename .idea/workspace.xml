@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5355afda-b732-46b6-97d6-e4c1a093ab08" name="Changes" comment="novo projeto">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.json" afterDir="false" />
-    </list>
+    <list default="true" id="5355afda-b732-46b6-97d6-e4c1a093ab08" name="Changes" comment="novo projeto" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
