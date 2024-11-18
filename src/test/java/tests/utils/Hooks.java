@@ -21,7 +21,7 @@ import java.net.ServerSocket;
 public class Hooks {
 
     private static AppiumDriverLocalService server;
-    static AppiumDriver<?> driver;
+    static AppiumDriver driver;
 
     /**
      * Configura e inicia o servidor Appium antes de todos os testes.
@@ -69,7 +69,7 @@ public class Hooks {
      * Retorna o AppiumDriver atual.
      * @return AppiumDriver
      */
-    public static AppiumDriver<?> getDriver() {
+    public static AppiumDriver getDriver() {
         return driver;
     }
 

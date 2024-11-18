@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5355afda-b732-46b6-97d6-e4c1a093ab08" name="Changes" comment="novo projeto">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/execution/CucumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/execution/CucumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/AppiumDriverHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/AppiumDriverHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/MasterPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/MasterPageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/PageException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/utils/PageException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +52,7 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/CURSO_MOBILE/MobileAppiumTests/src/test/java/tests/utils",
     "onboarding.tips.debug.path": "C:/CURSO_MOBILE/MobileAppiumTests/src/main/java/org/mobile/appiumtests/Main.java",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -129,7 +123,7 @@
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/corretto-11.0.24" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../Program Files/Java/jdk-21" />
       <option name="PACKAGE_NAME" value="execution" />
       <option name="MAIN_CLASS_NAME" value="execution.CucumberTest" />
       <option name="METHOD_NAME" value="" />
