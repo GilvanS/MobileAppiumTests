@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5355afda-b732-46b6-97d6-e4c1a093ab08" name="Changes" comment="novo projeto" />
+    <list default="true" id="5355afda-b732-46b6-97d6-e4c1a093ab08" name="Changes" comment="novo projeto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/resources/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/br/tests/SwaglabsLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mobile/appiumtests/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/execution/CucumberTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/login/LoginSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Actions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/AppiumDriverHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/Hooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/MasterPageFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/PageException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/gerador/Convenio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/gerador/FakerJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/utils/gerador/RandomGenerator.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,14 +62,18 @@
     "JUnit.FirstMobileTest.loginTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "SwagLabsMobile",
+    "TestNG.C:/CURSO_MOBILE/MobileAppiumTests/testng.xml.executor": "Run",
+    "TestNG.SwaglabsLoginTest.executor": "Run",
+    "TestNG.SwaglabsLoginTest.swaglabs_login_invalid_username.executor": "Run",
+    "git-widget-placeholder": "MobileAppiumSimple",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/CURSO_MOBILE/MobileAppiumTests/src/test/java",
     "last_opened_file_path": "C:/CURSO_MOBILE/MobileAppiumTests/src/test/java/tests/utils",
     "onboarding.tips.debug.path": "C:/CURSO_MOBILE/MobileAppiumTests/src/main/java/org/mobile/appiumtests/Main.java",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,32 +85,16 @@
       <recent name="C:\CURSO_MOBILE\MobileAppiumTests\src\test\java\tests\pages" />
       <recent name="C:\CURSO_MOBILE\MobileAppiumTests\src\test\resources\bdd" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\CURSO_MOBILE\MobileAppiumTests\src\main\resources" />
+      <recent name="C:\CURSO_MOBILE\MobileAppiumTests\src\main\java\com\br\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.br.config" />
       <recent name="tests.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CucumberTest">
-    <configuration name="Scenario: Validar acesso ao Ebac Store" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Home.feature" />
-      <option name="GLUE" value="utils testes.login" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="MobileAppiumTests" />
-      <option name="NAME_FILTER" value="^Validar acesso ao Ebac Store$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validar acesso ao Ebac Store$&quot;" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validar acesso ao Ebac Store" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SwaglabsLoginTest.swaglabs_login_invalid_username">
     <configuration name="Scenario: Validar cadastro de usuario no Ebac Store" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Home.feature" />
@@ -125,28 +134,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstMobileTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/CURSO_MOBILE/MobileAppiumTests/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MobileAppiumTests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstMobileTest" />
-      <option name="METHOD_NAME" value="loginTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwaglabsLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileAppiumTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.br.tests.SwaglabsLoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwaglabsLoginTest.swaglabs_login_invalid_username" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MobileAppiumTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.br.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.br.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.br.tests.SwaglabsLoginTest" />
+      <option name="METHOD_NAME" value="swaglabs_login_invalid_username" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: Validar acesso ao Ebac Store" />
       <item itemvalue="Cucumber Java.Scenario: Validar cadastro de usuario no Ebac Store" />
       <item itemvalue="JUnit.CucumberTest" />
-      <item itemvalue="JUnit.FirstMobileTest.loginTest" />
+      <item itemvalue="TestNG.C:/CURSO_MOBILE/MobileAppiumTests/testng.xml" />
+      <item itemvalue="TestNG.SwaglabsLoginTest" />
+      <item itemvalue="TestNG.SwaglabsLoginTest.swaglabs_login_invalid_username" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SwaglabsLoginTest.swaglabs_login_invalid_username" />
+        <item itemvalue="TestNG.SwaglabsLoginTest" />
+        <item itemvalue="TestNG.C:/CURSO_MOBILE/MobileAppiumTests/testng.xml" />
         <item itemvalue="JUnit.CucumberTest" />
         <item itemvalue="Cucumber Java.Scenario: Validar cadastro de usuario no Ebac Store" />
-        <item itemvalue="Cucumber Java.Scenario: Validar acesso ao Ebac Store" />
-        <item itemvalue="JUnit.FirstMobileTest.loginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,5 +235,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MobileAppiumTests$C__CURSO_MOBILE_MobileAppiumTests_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1731976736550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
